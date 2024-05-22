@@ -11,7 +11,7 @@ async function sendProducts(img, name, price){
     const products = await fetch(url, {
         method: "POST",
         headers: {"Content-type": "application/json"},
-        body: JSON.stringify({
+        body: JSON({
             img: img,
             name: name,
             price: price
