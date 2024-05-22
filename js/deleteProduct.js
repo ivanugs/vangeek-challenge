@@ -11,6 +11,7 @@ productContainer.addEventListener("click", function(event) {
         if (question) {
             try {
                 conexionAPI.deleteProducts(id);
+                window.location.reload();
             } catch (error) {
                 console.error(error);
             }

@@ -17,7 +17,7 @@ async function sendProducts(img, name, price){
             price: price
         })
     });
-    const parseProducts = products.json();
+    const parseProducts = await products.json();
 
     if (!products.ok) {
         throw new Error("Ha ocurrido un error al subir el producto. Intente nuevamente.");
@@ -30,7 +30,7 @@ async function deleteProducts(id){
         method: "DELETE",
         headers: {"Content-type": "application/json"}
     });
-    const parseProducts = product.json();
+    const parseProducts = await product.json();
     
     if (!product.ok) {
         throw new Error ("Ha ocurrido un error al eliminar el producto. Intente nuevamente.");
