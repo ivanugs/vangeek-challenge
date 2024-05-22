@@ -289,4 +289,8 @@ input[type="file"] {
         text-align: center;
     }
 
+    .footer__titulo-text{
+        text-align: center;
+    }
+
 }
