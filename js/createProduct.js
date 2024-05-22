@@ -16,4 +16,7 @@ async function createProduct(evento) {
     }
 }
 
-formulario.addEventListener("submit", evento => createProduct(evento));
+formulario.addEventListener("submit", evento => {
+    createProduct(evento);
+    formulario.reset()
+});

@@ -1,6 +1,8 @@
 import { conexionAPI } from "./conexionAPI.js";
 
 const list = document.querySelector("[data-list]");
+const formulario = document.querySelector("[data-formulario]");
+const cleanButtton = document.querySelector(".formulario__boton-limpiar");
 
 export default function createCard(img, name, price) {
     const product = document.createElement("div");
@@ -27,5 +29,9 @@ async function listProducts() {
         console.log(error);
     }
 };
+
+cleanButtton.addEventListener("click", () => {
+    formulario.reset();
+});
 
 listProducts();

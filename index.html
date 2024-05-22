@@ -80,15 +80,16 @@
               </fieldset>
 
               <fieldset class="formulario__campo">
-                <input
+                <input 
+                  name="imagen" 
                   id="imagen"
-                  type="file"
+                  placeholder="imagen..."
+                  class="campo__completo" 
+                  type="text"
+                  minlength="1"
                   data-img
-                  onchange="updateFileName()"
+                  required
                 />
-                <label class="campo__completo-file" for="imagen">
-                  <span id="file-name">imagen...</span>
-                </label>
                 <span class="mensaje-error"></span>
               </fieldset>
     
@@ -100,7 +101,7 @@
                   data-boton-enviar
                   type="submit"
                 />
-                <button class="formulario__boton-limpiar" onclick="">Limpiar</button>
+                <button type="button" class="formulario__boton-limpiar">Limpiar</button>
                 <span class="mensaje-error"></span>
               </div>
             </form>
