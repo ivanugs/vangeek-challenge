@@ -1,4 +1,4 @@
-const url = "http://localhost:3001/product";
+const url = "https://vangeek-challenge.vercel.app/product";
 
 async function getProducts() {
     const products = await fetch(url);
